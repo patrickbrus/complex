@@ -23,5 +23,3 @@ jobs:
     - 
       name: Build the Docker image
       run: docker compose build
-    -
-      name: Generate Deployment Package
