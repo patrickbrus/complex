@@ -29,29 +29,29 @@ jobs:
     - 
       name: Build Production Images and Push - Client
       uses: docker/build-push-action@v2
-        with:
-          context: ./client
-          push: true
-          tags: ga63qes/multi-client
+      with:
+        context: ./client
+        push: true
+        tags: ga63qes/multi-client
     - 
       name: Build Production Images and Push - Nginx
       uses: docker/build-push-action@v2
-        with:
-          context: ./nginx
-          push: true
-          tags: ga63qes/multi-nginx
+      with:
+        context: ./nginx
+        push: true
+        tags: ga63qes/multi-nginx
     -
       name: Build Production Images and Push - Server
       uses: docker/build-push-action@v2
-        with:
-          context: ./server
-          push: true
-          tags: ga63qes/multi-server
+      with:
+        context: ./server
+        push: true
+        tags: ga63qes/multi-server
     -
       name: Build Production Images and Push - Worker
       uses: docker/build-push-action@v2
-        with:
-          context: ./worker
-          push: true
-          tags: ga63qes/multi-worker
+      with:
+        context: ./worker
+        push: true
+        tags: ga63qes/multi-worker
     
